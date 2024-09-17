@@ -1,1 +1,1 @@
-var video = document.getElementById("bgvideo");
+let video = document.getElementById("bgvideo");
