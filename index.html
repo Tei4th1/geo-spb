@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>geo-spb.meteo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">   
 </head>
 <body>
-    <h1>geo-spb.meteo</h1>
-    <div class = "video-container">
-        <video autoplay loop muted id = "bgvideo">
-            <source src = "video1.MP4" type="video/mp4"></source>
-        </video>
+    <div class="container">
+        <h1>geo-spb.meteo</h1>
+        <div class = "video-container">
+            <video autoplay loop muted id = "bgvideo">
+                <source src = "video1.MP4" type="video/mp4"></source>
+            </video>
+        </div>
+        <script src = "meteo.js"></script>
+        <div class="squares">
+            <div class="geoSquare">
+                <div class = "cityInfo">
+                    <h2 id="secondCity">Тбилиси</h2>
+                    <h3 id="secondTemp">45&#8451;</h3>
+                    <h3 id="secondWeather">Солнечно</h3>
+                    <li id ="icon2"></li>
+                </div>
+            </div>
+            <div class="spbSquare">
+                <div class = "cityInfo">
+                    <h2 id="firstCity">Санкт-Петербург</h2>
+                    <h3 id="firstTemp">27&#8451;</h3>
+                    <h3 id="firstWeather">Пасмурно</h3>
+                    <li id = "icon1"></li>
+                </div>
+            </div>
+         </div>
     </div>
-    <script src = "meteo.js"></script>
-    <div id="geoSquare"></div>
-    <div id="spbSquare"></div>
 </body>
 </html>
